@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="index.css" />
+    <title>Your Pager</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="pager">
+        <h2>Pager</h2>
+
+        <div class="display pager-display">
+          <!--1-->
+
+          <p id="pager-display"></p>
+          <!--2-->
+        </div>
+      </section>
+      <section class="phone">
+        <h2>Phone</h2>
+        <div class="display phone-display">
+          <!--1-->
+          <p id="phone-display"></p>
+          <!--2-->
+        </div>
+        <div class="dialing-pad">
+          <button class="key">1</button>
+          <button class="key">2</button>
+          <button class="key">3</button>
+          <button class="key">4</button>
+          <button class="key">5</button>
+          <button class="key">6</button>
+          <button class="key">7</button>
+          <button class="key">8</button>
+          <button class="key">9</button>
+          <button class="key">*</button>
+          <button class="key">0</button>
+          <button class="key">#</button>
+        </div>
+        <div class="command-btn">
+          <button id="reset-btn">RESET</button>
+          <button id="send-btn">SEND</button>
+        </div>
+      </section>
+    </main>
+    <script src="/JavaScript/script.js"></script>
+  </body>
+</html>
+
+<!-- COMMENTS -->
+<!-- 1- Using generic class(1st) and a modifier class(2nd) to better handle the css -->
+<!-- 2- the p element was added inside the div to fix the height of both displays -->

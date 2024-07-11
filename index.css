@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #878a8f;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+main {
+  width: 456px;
+  padding: 50px 30px;
+  margin: 25px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 5px solid #000;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.pager {
+  padding: 10px;
+  color: #f8f8f8;
+  background-color: #283033;
+}
+
+.display {
+  padding: 0 25px;
+  font-size: 25px;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ON THE ABOVE ELEMENT, THESE SET THE HEIGHT ON BOTH DISPLAYS
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center; */
+
+.pager-display {
+  color: #000000;
+  background-color: #9ec4b3;
+}
+
+.phone {
+  margin-top: 80px;
+  padding: 10px;
+  color: #000000;
+  background-color: #d9d9d9;
+}
+
+.phone-display {
+  color: #f8f8f8;
+  background-color: #444444;
+}
+
+.dialing-pad {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.command-btn {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dfdcdc;
+}
+
+#reset-btn {
+  color: #f8f8f8;
+  background-color: #be482a;
+  border: 2px solid #000;
+}
+
+#reset-btn:hover {
+  background-color: #df775c;
+}
+
+#send-btn {
+  background-color: #3d9c7c;
+  border: 2px solid #000;
+}
+
+#send-btn:hover {
+  background-color: #89a99c;
+}
