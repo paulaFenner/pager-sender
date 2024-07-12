@@ -5,7 +5,7 @@ const sendBtnEl = document.querySelector('.send-btn');
 const dialingPadEl = document.querySelector('.dialing-pad');
 
 dialingPadEl.addEventListener('click', numberDialed);
-resetBtnEl.addEventListener('click', resetAll);
+resetBtnEl.addEventListener('click', clearPagerDisplay);
 sendBtnEl.addEventListener('click', renderPagerDisplay);
 
 function numberDialed(e) {
@@ -15,20 +15,26 @@ function numberDialed(e) {
     if (phoneDisplayEl.innerText.length < maxNumber) {
       phoneDisplayEl.innerText += value;
     }
-  } else {
-    alert('Please, click a button!');
   }
 }
 
 function renderPagerDisplay() {
   setTimeout(() => {
     pagerDisplayEl.innerText = phoneDisplayEl.innerText;
-    let bippingTone = new Audio('/assets/pager.wav');
-    bippingTone.play();
-    phoneDisplayEl.innerText = '';
+    ringTone();
+    clearPhoneDisplay();
   }, 1000);
 }
 
-function resetAll() {
+function ringTone() {
+  const bippingTone = new Audio('/assets/pager.wav');
+  bippingTone.play();
+}
+
+function clearPagerDisplay() {
   pagerDisplayEl.innerText = '';
+}
+
+function clearPhoneDisplay() {
+  phoneDisplayEl.innerText = '';
 }
