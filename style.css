@@ -8,6 +8,11 @@ body {
   text-align: center;
 }
 
+/* TYPOGRAPHY */
+h2 {
+  margin: 10px;
+}
+
 main {
   width: 456px;
   padding: 50px 30px;
@@ -15,10 +20,6 @@ main {
   background-color: #fff;
   border-radius: 30px;
   border: 5px solid #000;
-}
-
-h2 {
-  margin: 10px;
 }
 
 .pager {
@@ -66,13 +67,14 @@ h2 {
   grid-gap: 10px;
 }
 
-.command-btn {
+.command-container {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+/* BUTTONS */
 button {
   padding: 15px;
   border: none;
@@ -83,21 +85,21 @@ button:hover {
   background-color: #dfdcdc;
 }
 
-#reset-btn {
+.reset-btn {
   color: #f8f8f8;
   background-color: #be482a;
   border: 2px solid #000;
 }
 
-#reset-btn:hover {
+.reset-btn:hover {
   background-color: #df775c;
 }
 
-#send-btn {
+.send-btn {
   background-color: #3d9c7c;
   border: 2px solid #000;
 }
 
-#send-btn:hover {
+.send-btn:hover {
   background-color: #89a99c;
 }
